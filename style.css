@@ -1,186 +1,87 @@
-/* Importar las fuentes necesarias */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400&family=Lato:wght@300;400&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'); /* Importar Font Awesome */
-
-/* Reset básico */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    font-size: 10px;
-    -webkit-tap-highlight-color: transparent;
-    font-family: 'Lato', Helvetica, Arial, sans-serif;
-}
 
 body {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
-    background: linear-gradient(180deg, #2c3e50 0%, #5f9ea0 100%); /* Degradado oscuro arriba y más claro abajo */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-}
-
-/* Contenedor principal */
-.content-wrapper {
-    max-width: 1200px;
-    width: 100%;
-    padding-top: 80px;
+    font-family: 'Verdana', Arial, sans-serif; 
+    font-size: 1rem; 
+    color: #2c3e50;
+    background-color: #f4f4f4;
+    padding: 2rem 1rem; 
     text-align: center;
-    flex: 1;
 }
 
-/* Estilo del título */
-header h1 {
-    font-family: 'Oswald', Helvetica, Arial, sans-serif;
-    font-size: 7rem; /* Aumentar tamaño del título */
-    font-weight: 400;
-    color: #fff; /* Título en blanco */
-    margin-bottom: 15px;
-    margin-top: 30px;
-
-    line-height: 1.1;
+header {
+    background-color: #34495e; 
+    color: white;
+    padding: 3rem 2rem;
+    margin-bottom: 2rem;
 }
 
-/* Estilo de los iconos */
-.fa-icon {
-    color: #fff; /* Iconos en blanco */
-    margin: 0 6px; /* Espaciado entre iconos */
-    display: inline-block;
-    text-align: center;
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.fa-icon i {
-    font-size: 25px; /* Tamaño del icono */
-    color: inherit;
-}
-
-.fa-icon:hover {
-    transform: scale(1.1);
-    color: #3498db; /* Color al pasar el ratón por encima */
-}
-
-/* Subtítulo */
-header p {
+h1 {
     font-size: 2rem;
-    color: #fff; /* Subtítulo en blanco */
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 
-/* Cajas de contenido */
-.card {
-    background: #fff;
-    border: 2px solid #ddd;
-    border-radius: 0; /* Borde plano, no redondeado */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-    padding: 30px;
-    text-align: left;
-}
-
-/* Títulos dentro de las cajas */
-.card h2 {
-    font-family: 'Oswald', Helvetica, Arial, sans-serif;
-    font-size: 2.5rem;
-    font-weight: 400;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.card h3 {
-    margin-top: 25px;
-}
-
-/* Párrafos y enlaces dentro de las cajas */
-.card p, 
-.card a {
-    font-size: 1.6rem;
-    color: #555;
-    line-height: 2;
+p {
+    font-size: 1.1rem; 
+    margin-bottom: 1.5rem;
 }
 
 a {
-    text-decoration: none;
     color: #3498db;
-    transition: color 0.3s ease;
+    text-decoration: none;
 }
 
 a:hover {
     color: #2980b9;
 }
 
-/* Formulario */
-.form-control {
+
+
+main {
+    margin: auto 5%;
+    text-align: left;
+}
+
+section {
+    margin-bottom: 2.5rem; 
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #34495e; 
+}
+/* Estilos del formulario */
+form {
+    width: 100%; 
+}
+
+input, textarea {
     width: 100%;
-    padding: 15px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px; /* Bordes redondeados */
-    font-size: 1.6rem;
-    background-color: #f0f0f0; /* Fondo gris claro */
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    background-color: #f9f9f9;
 }
 
-textarea.form-control {
-    height: 150px;
-}
-
-.btn-primary {
-    background-color: #3498db; /* Color que combina con el fondo */
-    border: none;
+button {
+    width: 100%; 
+    padding: 1rem;
+    background-color: #3498db;
     color: white;
-    padding: 15px 30px;
-    font-size: 1.6rem;
-    border-radius: 30px; /* Bordes redondeados */
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
 }
 
-.btn-primary:hover {
+button:hover {
     background-color: #2980b9;
 }
 
-/* Footer */
-.footer-container {
-    background: none; /* Sin fondo */
-    padding: 20px 0;
-    color: #f9f2f2; /* Texto en color oscuro */
-    text-align: center;
-    font-size: 1.4rem;
-}
 
-/* Responsive */
-@media (max-width: 768px) {
-    .content-wrapper {
-        padding: 20px 15px;
-    }
-
-    header h1 {
-        font-size: 3.2rem;
-    }
-
-    header p {
-        font-size: 1.8rem;
-        margin-bottom: 30px;
-    }
-
-    .fa-icon {
-        width: 50px;
-        height: 50px;
-        font-size: 30px;
-        line-height: 50px;
-    }
-
-    .card {
-        padding: 20px;
-    }
+footer {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #777;
 }
