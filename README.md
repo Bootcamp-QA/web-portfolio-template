@@ -52,7 +52,9 @@ The following user stories are included in the testing scope:
 User Story will be considered complete when:
 - All functional test cases have been executed, with all test passing.
 - All related bugs have been resolved.
+
 Release will be consider ready when:
+
 - All user stories are done.
 - Regression tests have been successfully completed after each sprint, with no major issues found.
 
