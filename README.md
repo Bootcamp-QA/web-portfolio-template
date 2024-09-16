@@ -55,7 +55,7 @@ User Story will be considered complete when:
 
 Release will be consider ready when:
 
-- All user stories are done.
+- All user stories of the sprint are done.
 - Regression tests have been successfully completed after each sprint, with no major issues found.
 
 ## 11. Deliverables
