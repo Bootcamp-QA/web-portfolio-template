@@ -47,15 +47,13 @@ The following user stories are included in the testing scope:
 - **Test Management Tool**: Tests and scenarios are documented using **AssertThat**, a test management tool that helps in organizing, executing, and tracking test cases.
 - **Scenario Writing**: Test scenarios are written in **Gherkin** language, which provides a clear and structured way to describe the expected behavior of features in a human-readable format.
 
-## 9. Test Cases
-The test cases will cover the following:
-- **Functional Test Cases**: Defined based on user stories using BDD principles and written in Gherkin. They verify the correct behavior of each feature for the five user stories.
-- **Regression Test Cases**: Ensure that previously tested functionalities continue to work as expected after each sprint release.
 
-## 10. Exit Criteria
-Testing will be considered complete when:
-- All functional test cases have been executed, with at least 90% passing.
-- All critical bugs have been resolved.
+## 10. Definition of Done
+User Story will be considered complete when:
+- All functional test cases have been executed, with all test passing.
+- All related bugs have been resolved.
+Release will be consider ready when:
+- All user stories are done.
 - Regression tests have been successfully completed after each sprint, with no major issues found.
 
 ## 11. Deliverables
