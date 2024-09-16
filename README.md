@@ -23,9 +23,9 @@ This project adopts BDD Methodology for testing.
 
 
 ### TEST DOCUMENTATION
-[Functional Test Plan and Results](/tests/test-plan.pdf)
+[Functional Test Execution Report](/tests/test-plan.pdf)
 
-[Regression Test Plan and Results](/tests/regression-test-plan.pdf)
+[Regression Test Execution Report](/tests/regression-test-plan.pdf)
 
 [BUG Report](/tests/regression-test-plan.pdf)
 
